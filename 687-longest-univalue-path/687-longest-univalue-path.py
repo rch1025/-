@@ -10,7 +10,7 @@ class Solution:
             left = dfs(node.left)
             right = dfs(node.right)
             
-            # 현재 노드가 자식 노드와 동일한 경우 거리 l 흥가
+            # 현재 노드가 자식 노드와 동일한 경우 거리 l 추가
             if node.left and node.left.val == node.val:
                 left += 1
             else:
